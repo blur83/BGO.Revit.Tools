@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3E5458B2-7A34-433B-94DA-C40B3C2FE0BB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BGO.Revit.Tools</RootNamespace>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <WarningLevel>4</WarningLevel>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyName>BGO.Revit.Tools</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Prefer32Bit>false</Prefer32Bit>
+    <OutputPath>bin\Release\</OutputPath>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\Flac.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>4.5</RequiredTargetFramework>
+      <HintPath>..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\PresentationCore.dll</HintPath>
+    </Reference>
+    <Reference Include="RevitAPI, Version=19.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files\Autodesk\Revit 2022\RevitAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="RevitAPIUI, Version=19.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files\Autodesk\Revit 2022\RevitAPIUI.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <HintPath>..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.DataSetExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <HintPath>..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <HintPath>..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml">
+      <HintPath>..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.XML.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <HintPath>..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\WindowsBase.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="00. Utils\Elements\ElementUtils.cs" />
+    <Compile Include="00. Utils\FormSelectPhase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="00. Utils\FormSelectPhase.Designer.cs">
+      <DependentUpon>FormSelectPhase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="00. Utils\Info\InfoFlac.cs" />
+    <Compile Include="00. Utils\Info\InfoFlacForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="00. Utils\Info\InfoFlacForm.Designer.cs">
+      <DependentUpon>InfoFlacForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="00. Utils\IniFile.cs" />
+    <Compile Include="00. Utils\Strings\FormStatusList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="00. Utils\Strings\FormStatusList.designer.cs">
+      <DependentUpon>FormStatusList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="06. Sheets\UpdateSheetsFromLOD.cs" />
+    <Compile Include="11. Excel\Excel.cs" />
+    <Compile Include="02. Diagnostics\DiagUtils.cs" />
+    <Compile Include="02. Diagnostics\formSelectWorkset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="02. Diagnostics\formSelectWorkset.Designer.cs">
+      <DependentUpon>formSelectWorkset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="21. Rooms\RoomUtils.cs" />
+    <Compile Include="21. Rooms\UpdateRoomSharedParameters.cs" />
+    <Compile Include="05. LinkedDocuments\LinkUtils.cs" />
+    <Compile Include="06. Sheets\SheetUtils.cs" />
+    <Compile Include="06. Sheets\SynchronizeSheetNames.cs" />
+    <Compile Include="07. Parameters\ParameterUtils.cs" />
+    <Compile Include="09. Families\FamilyUtils.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="11. Create3DView\Create3DView.cs" />
+    <Compile Include="02. Diagnostics\UpdateDiagnosticSharedParameters.cs" />
+    <Compile Include="11. Create3DView\FormCreate3DView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="11. Create3DView\FormCreate3DView.designer.cs">
+      <DependentUpon>FormCreate3DView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="03. ReIndex\FormReIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="03. ReIndex\FormReIndex.Designer.cs">
+      <DependentUpon>FormReIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="03. ReIndex\ReIndex.cs" />
+    <Compile Include="00. Utils\Strings\StringUtility.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BGO.Revit.Tools.addin">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Images\Drawing.ico" />
+    <None Include="Images\Flac_logo.png" />
+    <None Include="Images\Leclecqassocies_logo-noir.png" />
+    <None Include="Images\flac.ico" />
+    <None Include="Resources\Flac.ico" />
+    <None Include="Resources\IconFlac.ico" />
+    <None Include="Images\RoomsAndSpaces.ico" />
+    <None Include="Images\Parameters.ico" />
+    <None Include="Images\House.ico" />
+    <None Include="Images\Basics.ico" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="00. Utils\FormSelectPhase.resx">
+      <DependentUpon>FormSelectPhase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="00. Utils\Info\InfoFlacForm.resx">
+      <DependentUpon>InfoFlacForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="00. Utils\Strings\FormStatusList.resx">
+      <DependentUpon>FormStatusList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="11. Create3DView\FormCreate3DView.resx">
+      <DependentUpon>FormCreate3DView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="02. Diagnostics\formSelectWorkset.resx">
+      <DependentUpon>formSelectWorkset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="03. ReIndex\FormReIndex.resx">
+      <DependentUpon>FormReIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="AfterClean">
+  </Target>
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(ProjectDir)BGO.Revit.Tools.addin" "$(AppData)\Autodesk\REVIT\Addins\2022"
+copy "$(ProjectDir)bin\Release\BGO.Revit.Tools.dll" "$(AppData)\Autodesk\REVIT\Addins\2022"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <!-- Utilities Application-->
+  <AddIn Type="Application">
+    <Name>Plugin BIMGO24</Name>
+    <FullClassName>BGO.Revit.Tools.MainApp</FullClassName>
+    <Assembly>BGO.Revit.Tools.dll</Assembly>
+    <AddInId>04EC0459-8F4F-4e6f-8AC8-90BE0C791C9D</AddInId>
+    <VendorId>BIMgo24</VendorId>
+    <VendorDescription>BIMgo24, www.bimgo24.fr</VendorDescription>
+  </AddIn>
+  <!-- Create 3D View -->
+  <AddIn Type="Command">
+    <Text>Create 3D View</Text>
+    <LongDescription>
+      <p>The command create an automatic 3D view around previously selected elements. If no element is previously selected, a dialog box appears that allow to select grids or scope box limits for X and Y direction, and two level limits for the Z direction. The section box of the 3D view is automatically adjusted to those limits</p>
+      <p>First select the element(s) if you want a 3D view around element(s) or unselect all elements if you want to access the dialog box. Then, run the command</p>
+    </LongDescription>
+    <FullClassName>BGO.Revit.Tools.Create3DView</FullClassName>
+    <Assembly>BGO.Revit.Tools.dll</Assembly>
+    <AddInId>57D00DD9-C9A4-4cce-A6A3-9985BF3D4D8A</AddInId>
+    <VisibilityMode>NotVisibleWhenNoActiveDocument</VisibilityMode>
+    <VisibilityMode>NotVisibleInFamily</VisibilityMode>
+    <VendorId>BIMgo24</VendorId>
+    <VendorDescription>BIMgo24, www.bimgo24.fr</VendorDescription>
+  </AddIn>
+  <!-- Update Sheets From LOD -->
+  <AddIn Type="Command">
+    <Text>Update Sheets From LOD</Text>
+    <FullClassName>BGO.Revit.Tools.UpdateSheetsFromLOD</FullClassName>
+    <Assembly>BGO.Revit.Tools.dll</Assembly>
+    <AddInId>ECC588EF-804A-4ee2-A371-201429DD4D74</AddInId>
+    <VisibilityMode>NotVisibleWhenNoActiveDocument</VisibilityMode>
+    <VisibilityMode>NotVisibleInFamily</VisibilityMode>
+    <LongDescription>
+      <p>The command create and/or update sheets using information available in a text file previously exported from the EXCEL list of document</p>
+      <p>Run the command, select the text file and click OK</p>
+    </LongDescription>
+    <VendorId>BIMgo24</VendorId>
+    <VendorDescription>BIMgo24, www.bimgo24.fr</VendorDescription>
+  </AddIn>
+  <!-- ReIndex -->
+  <AddIn Type="Command">
+    <Text>ReIndex Selected Elements</Text>
+    <LongDescription>
+      <p>The command set the values of any parameter of previously selected elements with a sequential serie of values according to a numbering format and a starting index.</p>
+      <p>First select the elements you want to renumber, run the command, set the name of the parameter to update, set the starting index as well as the format for the numbering, set the numbering direction and click OK</p>
+    </LongDescription>
+    <FullClassName>BGO.Revit.Tools.ReIndex</FullClassName>
+    <Assembly>BGO.Revit.Tools.dll</Assembly>
+    <AddInId>6B4902FF-33BB-4390-AFF9-3D2BF828AECF</AddInId>
+    <VisibilityMode>NotVisibleWhenNoActiveDocument</VisibilityMode>
+    <VisibilityMode>NotVisibleInFamily</VisibilityMode>
+    <VendorId>BIMgo24</VendorId>
+    <VendorDescription>BIMgo24, www.bimgo24.fr</VendorDescription>
+  </AddIn>
+  <!-- UpdateRoomSharedParameters -->
+  <AddIn Type="Command">
+    <Text>Update Room Shared Parameters</Text>
+    <LongDescription>
+      <p>The command update the room shared parameters "@G Room Name" and "@G Room Number" with the values of the corresponding parameters of the room where the famility instance is located, for all family instances either belonging to the active workset or to all worksets. Only families having these shared parameters available, either as family parameter or as project parameter, will be updated. The corresponding parameters will then be available in schedules for diagnostic purpose for example. Rooms are searched first in the current document, and then in the REVIT linked documents.</p>
+      <p>Run the command, check if you want to update family instances belonging to the active workset only, or all family instances, and click OK</p>
+    </LongDescription>
+    <FullClassName>BGO.Revit.Tools.UpdateRoomSharedParameters</FullClassName>
+    <Assembly>BGO.Revit.Tools.dll</Assembly>
+    <AddInId>EC1118F2-5F9F-4c0d-BABB-D4539BA91343</AddInId>
+    <VisibilityMode>NotVisibleWhenNoActiveDocument</VisibilityMode>
+    <VisibilityMode>NotVisibleInFamily</VisibilityMode>
+    
+    <VendorId>BIMgo24</VendorId>
+    <VendorDescription>BIMgo24, www.bimgo24.fr</VendorDescription>
+  </AddIn>
+  <!-- UpdateDiagnosticSharedParameters -->
+  <AddIn Type="Command">
+    <Text>Update Diagnostic Shared Parameters</Text>
+    <LongDescription>
+      <p>The command update the diagnostics shared parameters "@G Workset", "@G Elevation", "@G Offset" and "@G Host" with the values of the corresponding REVIT built-in parameters, for all family instances either belonging to the active workset or to all worksets. Only families having one or more of these shared parameters available, either as family parameter or as project parameter, will be updated. The corresponding parameters will then be available in schedules for diagnostic purpose for example</p>
+      <p>Run the command, check if you want to update family instances belonging to the active workset only, or all family instances, and click OK</p>
+    </LongDescription>
+    <FullClassName>BGO.Revit.Tools.UpdateDiagnosticSharedParameters</FullClassName>
+    <Assembly>BGO.Revit.Tools.dll</Assembly>
+    <AddInId>4DD8196C-D740-411a-AAF1-F7ABBE9B00B3</AddInId>
+    <VisibilityMode>NotVisibleWhenNoActiveDocument</VisibilityMode>
+    <VisibilityMode>NotVisibleInFamily</VisibilityMode>
+   
+    <VendorId>BIMgo24</VendorId>
+    <VendorDescription>BIMgo24, www.bimgo24.fr</VendorDescription>
+  </AddIn>
+
+ 
+
+  
+</RevitAddIns>
+
