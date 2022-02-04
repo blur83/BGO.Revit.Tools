@@ -10,7 +10,7 @@ using System;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace BIMgo24.Revit
+namespace BGO.Revit.Tools
 {
     /// <summary>
     /// Create a New INI file to store or load data

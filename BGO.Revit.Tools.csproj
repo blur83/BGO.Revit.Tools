@@ -141,6 +141,13 @@
     <Compile Include="00. Utils\Strings\FormStatusList.designer.cs">
       <DependentUpon>FormStatusList.cs</DependentUpon>
     </Compile>
+    <Compile Include="01. Manage\LinkedCadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01. Manage\LinkedCadForm.Designer.cs">
+      <DependentUpon>LinkedCadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="01. Manage\LinkedCADManager.cs" />
     <Compile Include="06. Sheets\UpdateSheetsFromLOD.cs" />
     <Compile Include="11. Excel\Excel.cs" />
     <Compile Include="02. Diagnostics\DiagUtils.cs" />
@@ -231,6 +238,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="00. Utils\Strings\FormStatusList.resx">
       <DependentUpon>FormStatusList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01. Manage\LinkedCadForm.resx">
+      <DependentUpon>LinkedCadForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="11. Create3DView\FormCreate3DView.resx">
       <DependentUpon>FormCreate3DView.cs</DependentUpon>
