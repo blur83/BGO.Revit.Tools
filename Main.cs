@@ -112,7 +112,7 @@ namespace BGO.Revit.Tools
             //    new EventHandler<Autodesk.Revit.DB.Events.DocumentChangedEventArgs>(ControlledApplication_DocumentChanged);
 
             // Add BIMgo24 Ribbon to Revit Ribbon
-            AddFlacRibbon();
+            AddLARibbon();
 
              
             return Result.Succeeded;
@@ -140,10 +140,10 @@ namespace BGO.Revit.Tools
         /// Revit Intro Labs here. Cf. Section 3.8 (pp 46) of 
         /// the Developers Guide. 
         /// </summary>
-        public void AddFlacRibbon()
+        public void AddLARibbon()
         {
             // Create a ribbon tab for BIMgo24     
-            _UICApp.CreateRibbonTab("FLAC");
+            _UICApp.CreateRibbonTab("LA BIM");
 
             // Create a panel for BIMgo24 info
             AddInfoPanel();
@@ -204,14 +204,14 @@ namespace BGO.Revit.Tools
 
         public void AddInfoPanel()
         {//Create a ribbon panel for info
-            RibbonPanel panel = _UICApp.CreateRibbonPanel("FLAC", "FLAC");
+            RibbonPanel panel = _UICApp.CreateRibbonPanel("LA BIM", "Info");
 
-            // Create Info FLAC
+            // Create Info LA
             // Set the information about the command we will be assigning to the button 
-            PushButtonData pushButtonDataInfoFlac = new PushButtonData("FlacPushButtonInfoFlac",
-                "Info BIM", _AssemblyPath, _NameSpace+".InfoFlac");
+            PushButtonData pushButtonDataInfoLA = new PushButtonData("FlacPushButtonInfoLA",
+                "Info BIM", _AssemblyPath, _NameSpace+".InfoLA");
             // Add the button to the panel 
-            PushButton pushButtonInfoFlac = panel.AddItem(pushButtonDataInfoFlac) as PushButton;
+            PushButton pushButtonInfoFlac = panel.AddItem(pushButtonDataInfoLA) as PushButton;
             // Add an icon 
             // Make sure you reference WindowsBase and PresentationCore, and import System.Windows.Media.Imaging namespace. 
             //pushButtonCreate3DView.LargeImage = NewBitmapImage("House.ico");
@@ -226,12 +226,12 @@ namespace BGO.Revit.Tools
         public void AddUtilityPanel()
         {
             //Create a ribbon panel for utilities
-            RibbonPanel panel = _UICApp.CreateRibbonPanel("FLAC", "Utilities");
+            RibbonPanel panel = _UICApp.CreateRibbonPanel("LA BIM", "Général");
 
             // Create 3D View
             // Set the information about the command we will be assigning to the button 
             PushButtonData pushButtonDataCreate3DView = new PushButtonData("PushButtonCreate3DView",
-                "Create 3D View", _AssemblyPath, _NameSpace + ".Create3DView");
+                "Créer Vue 3D", _AssemblyPath, _NameSpace + ".Create3DView");
             // Add the button to the panel 
             PushButton pushButtonCreate3DView = panel.AddItem(pushButtonDataCreate3DView) as PushButton;
             // Add an icon 
@@ -244,7 +244,7 @@ namespace BGO.Revit.Tools
             // UpdateSheetsFromLOD
             // Set the information about the command we will be assigning to the button 
             PushButtonData pushButtonDataUpdateSheetsFromLOD = new PushButtonData("PushButtonUpdateSheetsFromLOD",
-                "Sheets from LOD", _AssemblyPath, _NameSpace + ".UpdateSheetsFromLOD");
+                "Créer Feuilles", _AssemblyPath, _NameSpace + ".UpdateSheetsFromLOD");
             // Add the button to the panel 
             PushButton pushButtonUpdateSheetsFromLOD = panel.AddItem(pushButtonDataUpdateSheetsFromLOD) as PushButton;
             // Add an icon 

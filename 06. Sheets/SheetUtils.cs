@@ -113,7 +113,7 @@ namespace BGO.Revit.Tools
         public static void UpdateSheetsFromLOD(UIDocument UIdoc)
         {
             // Lecture de la liste de documents
-            var SheetParamInfos = ParameterUtils.ReadParametersTableFromTextFile("Select list of document text file");
+            var SheetParamInfos = ParameterUtils.ReadParametersTableFromTextFile("Séléctionner la liste de plans");
 
             // Si au moins un document dans la liste :)
             if (SheetParamInfos.Count != 0)
@@ -149,9 +149,9 @@ namespace BGO.Revit.Tools
                         tr.Start(TransactionName);
 
                         var SheetParameterNames = SheetParamInfos.ElementAt(0).Value;
-                        var TitleBlockFieldName = "TitleBlock";
+                        var TitleBlockFieldName = "Cartouche";
                         var TitleBlockFieldIndex = SheetParameterNames.IndexOf(TitleBlockFieldName);
-                        string RevitFileFieldName = "RevitFileName";
+                        string RevitFileFieldName = "NomDuFichierRevit";
                         var RevitFileFieldIndex = SheetParameterNames.IndexOf(RevitFileFieldName);
                         if (RevitFileFieldIndex < 0)
                         {

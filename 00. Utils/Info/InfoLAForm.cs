@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BGO.Revit.Tools
 {
-    public partial class InfoFlacForm : Form
+    public partial class InfoLAForm : Form
     {
-        public InfoFlacForm()
+        public InfoLAForm()
         {
             InitializeComponent();
         }
@@ -31,7 +31,7 @@ namespace BGO.Revit.Tools
 
         private void button2_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("explorer", "https://www.leclercqassocies.fr/fr");
+            System.Diagnostics.Process.Start("explorer", "https://agenceflac.sharepoint.com/sites/FlacBIM/SitePages/TrainingHome.aspx");
         }
 
         private void label1_Click(object sender, EventArgs e)

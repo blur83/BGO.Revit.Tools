@@ -17,15 +17,15 @@ using Autodesk.Revit.Attributes;
 namespace BGO.Revit.Tools
 {
     [Transaction(TransactionMode.Manual)]
-    public class InfoFlac : IExternalCommand
+    public class InfoLA : IExternalCommand
     {
         public Result Execute(ExternalCommandData commandData, ref string message, ElementSet elements)
         {
             UIDocument UIdoc = commandData.Application.ActiveUIDocument;
             Document doc = UIdoc.Document;
 
-            InfoFlacForm showInfoFlacForm = new InfoFlacForm();
-            showInfoFlacForm.ShowDialog();
+            InfoLAForm showInfoLAForm = new InfoLAForm();
+            showInfoLAForm.ShowDialog();
 
             return Result.Succeeded;
         }

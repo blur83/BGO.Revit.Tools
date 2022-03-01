@@ -127,12 +127,12 @@
     <Compile Include="00. Utils\FormSelectPhase.Designer.cs">
       <DependentUpon>FormSelectPhase.cs</DependentUpon>
     </Compile>
-    <Compile Include="00. Utils\Info\InfoFlac.cs" />
-    <Compile Include="00. Utils\Info\InfoFlacForm.cs">
+    <Compile Include="00. Utils\Info\InfoLA.cs" />
+    <Compile Include="00. Utils\Info\InfoLAForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="00. Utils\Info\InfoFlacForm.Designer.cs">
-      <DependentUpon>InfoFlacForm.cs</DependentUpon>
+    <Compile Include="00. Utils\Info\InfoLAForm.Designer.cs">
+      <DependentUpon>InfoLAForm.cs</DependentUpon>
     </Compile>
     <Compile Include="00. Utils\IniFile.cs" />
     <Compile Include="00. Utils\Strings\FormStatusList.cs">
@@ -233,8 +233,8 @@
     <EmbeddedResource Include="00. Utils\FormSelectPhase.resx">
       <DependentUpon>FormSelectPhase.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="00. Utils\Info\InfoFlacForm.resx">
-      <DependentUpon>InfoFlacForm.cs</DependentUpon>
+    <EmbeddedResource Include="00. Utils\Info\InfoLAForm.resx">
+      <DependentUpon>InfoLAForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="00. Utils\Strings\FormStatusList.resx">
       <DependentUpon>FormStatusList.cs</DependentUpon>

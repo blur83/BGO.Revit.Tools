@@ -64,7 +64,7 @@
             buttonCancel.Name = "buttonCancel";
             buttonCancel.Size = new System.Drawing.Size(75, 23);
             buttonCancel.TabIndex = 1;
-            buttonCancel.Text = "Cancel";
+            buttonCancel.Text = "Annule";
             buttonCancel.UseVisualStyleBackColor = true;
             // 
             // buttonCreate
@@ -75,7 +75,7 @@
             this.buttonCreate.Name = "buttonCreate";
             this.buttonCreate.Size = new System.Drawing.Size(75, 23);
             this.buttonCreate.TabIndex = 0;
-            this.buttonCreate.Text = "Create";
+            this.buttonCreate.Text = "Créer";
             this.buttonCreate.UseVisualStyleBackColor = true;
             this.buttonCreate.Click += new System.EventHandler(this.buttonCreate_Click);
             // 
@@ -84,9 +84,9 @@
             this.comboBoxScopeBoxes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxScopeBoxes.Enabled = false;
             this.comboBoxScopeBoxes.FormattingEnabled = true;
-            this.comboBoxScopeBoxes.Location = new System.Drawing.Point(129, 201);
+            this.comboBoxScopeBoxes.Location = new System.Drawing.Point(179, 201);
             this.comboBoxScopeBoxes.Name = "comboBoxScopeBoxes";
-            this.comboBoxScopeBoxes.Size = new System.Drawing.Size(442, 21);
+            this.comboBoxScopeBoxes.Size = new System.Drawing.Size(392, 21);
             this.comboBoxScopeBoxes.Sorted = true;
             this.comboBoxScopeBoxes.TabIndex = 13;
             this.comboBoxScopeBoxes.SelectedIndexChanged += new System.EventHandler(this.comboBoxScopeBoxes_SelectedIndexChanged);
@@ -102,25 +102,25 @@
             this.groupBox_LevelLimits.Size = new System.Drawing.Size(444, 102);
             this.groupBox_LevelLimits.TabIndex = 14;
             this.groupBox_LevelLimits.TabStop = false;
-            this.groupBox_LevelLimits.Text = "Level Limits";
+            this.groupBox_LevelLimits.Text = "Limites Niveaux";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(17, 58);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(23, 13);
+            this.label7.Size = new System.Drawing.Size(17, 13);
             this.label7.TabIndex = 11;
-            this.label7.Text = "To:";
+            this.label7.Text = "A:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(17, 31);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(33, 13);
+            this.label6.Size = new System.Drawing.Size(24, 13);
             this.label6.TabIndex = 10;
-            this.label6.Text = "From:";
+            this.label6.Text = "De:";
             // 
             // comboBoxLevelEnd
             // 
@@ -158,7 +158,7 @@
             this.groupBoxXYLimits.Size = new System.Drawing.Size(610, 295);
             this.groupBoxXYLimits.TabIndex = 16;
             this.groupBoxXYLimits.TabStop = false;
-            this.groupBoxXYLimits.Text = "XY Limits";
+            this.groupBoxXYLimits.Text = "Limites XY";
             this.groupBoxXYLimits.Enter += new System.EventHandler(this.groupBoxXYLimits_Enter);
             // 
             // label5
@@ -184,9 +184,9 @@
             this.radioButtonByElement.AutoSize = true;
             this.radioButtonByElement.Location = new System.Drawing.Point(31, 257);
             this.radioButtonByElement.Name = "radioButtonByElement";
-            this.radioButtonByElement.Size = new System.Drawing.Size(95, 17);
+            this.radioButtonByElement.Size = new System.Drawing.Size(82, 17);
             this.radioButtonByElement.TabIndex = 19;
-            this.radioButtonByElement.Text = "By 3D Element";
+            this.radioButtonByElement.Text = "Par Element";
             this.radioButtonByElement.UseVisualStyleBackColor = true;
             this.radioButtonByElement.CheckedChanged += new System.EventHandler(this.radioButtonByElement_CheckedChanged);
             // 
@@ -195,9 +195,9 @@
             this.radioButtonByScopeBox.AutoSize = true;
             this.radioButtonByScopeBox.Location = new System.Drawing.Point(31, 201);
             this.radioButtonByScopeBox.Name = "radioButtonByScopeBox";
-            this.radioButtonByScopeBox.Size = new System.Drawing.Size(92, 17);
+            this.radioButtonByScopeBox.Size = new System.Drawing.Size(127, 17);
             this.radioButtonByScopeBox.TabIndex = 18;
-            this.radioButtonByScopeBox.Text = "By Scope Box";
+            this.radioButtonByScopeBox.Text = "Par zone de définition";
             this.radioButtonByScopeBox.UseVisualStyleBackColor = true;
             this.radioButtonByScopeBox.CheckedChanged += new System.EventHandler(this.radioButtonByScopeBox_CheckedChanged);
             // 
@@ -207,10 +207,10 @@
             this.radioButtonByGrid.Checked = true;
             this.radioButtonByGrid.Location = new System.Drawing.Point(31, 19);
             this.radioButtonByGrid.Name = "radioButtonByGrid";
-            this.radioButtonByGrid.Size = new System.Drawing.Size(59, 17);
+            this.radioButtonByGrid.Size = new System.Drawing.Size(97, 17);
             this.radioButtonByGrid.TabIndex = 17;
             this.radioButtonByGrid.TabStop = true;
-            this.radioButtonByGrid.Text = "By Grid";
+            this.radioButtonByGrid.Text = "Par Quadrillage";
             this.radioButtonByGrid.UseVisualStyleBackColor = true;
             this.radioButtonByGrid.CheckedChanged += new System.EventHandler(this.radioButtonByGrid_CheckedChanged);
             // 
@@ -224,54 +224,54 @@
             this.groupBoxGridLimits.Controls.Add(this.comboBoxYGridStart);
             this.groupBoxGridLimits.Controls.Add(this.comboBoxXGridEnd);
             this.groupBoxGridLimits.Controls.Add(this.comboBoxXGridStart);
-            this.groupBoxGridLimits.Location = new System.Drawing.Point(129, 19);
+            this.groupBoxGridLimits.Location = new System.Drawing.Point(179, 19);
             this.groupBoxGridLimits.Name = "groupBoxGridLimits";
-            this.groupBoxGridLimits.Size = new System.Drawing.Size(442, 162);
+            this.groupBoxGridLimits.Size = new System.Drawing.Size(392, 162);
             this.groupBoxGridLimits.TabIndex = 16;
             this.groupBoxGridLimits.TabStop = false;
-            this.groupBoxGridLimits.Text = "Grid Limits";
+            this.groupBoxGridLimits.Text = "Limtes";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(56, 107);
+            this.label4.Location = new System.Drawing.Point(25, 107);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(36, 13);
+            this.label4.Size = new System.Drawing.Size(70, 13);
             this.label4.TabIndex = 19;
-            this.label4.Text = "Y Grid";
+            this.label4.Text = "Quadrillage Y";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(56, 61);
+            this.label3.Location = new System.Drawing.Point(25, 61);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(36, 13);
+            this.label3.Size = new System.Drawing.Size(70, 13);
             this.label3.TabIndex = 18;
-            this.label3.Text = "X Grid";
+            this.label3.Text = "Quadrillage X";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(280, 34);
+            this.label2.Location = new System.Drawing.Point(254, 34);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 13);
+            this.label2.Size = new System.Drawing.Size(21, 13);
             this.label2.TabIndex = 17;
-            this.label2.Text = "End Limit";
+            this.label2.Text = "Fin";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(103, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 13);
+            this.label1.Size = new System.Drawing.Size(36, 13);
             this.label1.TabIndex = 16;
-            this.label1.Text = "Start Limit";
+            this.label1.Text = "Début";
             // 
             // comboBoxYGridEnd
             // 
             this.comboBoxYGridEnd.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxYGridEnd.FormattingEnabled = true;
-            this.comboBoxYGridEnd.Location = new System.Drawing.Point(280, 107);
+            this.comboBoxYGridEnd.Location = new System.Drawing.Point(254, 107);
             this.comboBoxYGridEnd.Name = "comboBoxYGridEnd";
             this.comboBoxYGridEnd.Size = new System.Drawing.Size(121, 21);
             this.comboBoxYGridEnd.Sorted = true;
@@ -293,7 +293,7 @@
             // 
             this.comboBoxXGridEnd.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxXGridEnd.FormattingEnabled = true;
-            this.comboBoxXGridEnd.Location = new System.Drawing.Point(280, 61);
+            this.comboBoxXGridEnd.Location = new System.Drawing.Point(254, 61);
             this.comboBoxXGridEnd.Name = "comboBoxXGridEnd";
             this.comboBoxXGridEnd.Size = new System.Drawing.Size(121, 21);
             this.comboBoxXGridEnd.Sorted = true;
@@ -321,7 +321,7 @@
             this.Controls.Add(buttonCancel);
             this.Controls.Add(this.buttonCreate);
             this.Name = "FormCreate3DView";
-            this.Text = "Create a 3D View From XY And Level Limits";
+            this.Text = "Créer une vue 3D à partir des limites";
             this.groupBox_LevelLimits.ResumeLayout(false);
             this.groupBox_LevelLimits.PerformLayout();
             this.groupBoxXYLimits.ResumeLayout(false);
